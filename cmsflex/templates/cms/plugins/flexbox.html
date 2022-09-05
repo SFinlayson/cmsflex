@@ -6,7 +6,7 @@
 }
 {% endif %}
 </style>
-<div style="display:flex;" class="{{ instance.class_name }}">
+<div style="display:flex;" class="{{ instance.class_name }}" {% if instance.attributes %}{{instance.attributes_str}}{% endif %}>
 {% for plugin in instance.child_plugin_instances %}
   	{% render_plugin plugin %}
 {% endfor %}
