@@ -40,10 +40,7 @@ setup(
     author='SFinlayson',
     author_email='finlaysonsteve@gmail.com',
     url='https://github.com/cmsflex/cmsfelx',
-    packages=[
-        'cmsflex',
-        'cmsflex.migrations'
-    ],
+    packages=find_packages(exclude=['project', 'project.*']),
     install_requires=INSTALL_REQUIRES,
     license='LICENSE.txt',
     platforms=['OS Independent'],
