@@ -17,7 +17,11 @@ class Flexbox(CMSPlugin):
     align_items = models.CharField(max_length=80, blank=True, null=True)
     align_content = models.CharField(max_length=80, blank=True, null=True)
     gap = models.CharField(max_length=50, blank=True, null=True)
-
+    attributes = AttributesField(
+        verbose_name='Attributes',
+        blank=True,
+        excluded_keys=['href', 'target'],
+    )
     cmsplugin_ptr = models.OneToOneField(
         CMSPlugin,
         related_name='%(app_label)s_%(class)s',
@@ -38,7 +42,11 @@ class FlexItem(CMSPlugin):
     )
     flex = models.CharField(max_length=50, null=True, blank=True)
     align_self = models.CharField(max_length=50, null=True, blank=True)
-
+    attributes = AttributesField(
+        verbose_name='Attributes',
+        blank=True,
+        excluded_keys=['href', 'target'],
+    )
     cmsplugin_ptr = models.OneToOneField(
         CMSPlugin,
         related_name='%(app_label)s_%(class)s',
