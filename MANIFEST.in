@@ -1,0 +1,7 @@
+include LICENSE.txt
+include README.rst
+recursive-include cmsflex/migrations *
+recursive-include cmsflex/south_migrations *
+recursive-include cmsflex/locale *
+recursive-include cmsflex/templates *
+recursive-exclude * *.pyc

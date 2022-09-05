@@ -38,7 +38,7 @@ setup(
     description='Flex Plugin for django CMS',
     author='SFinlayson',
     author_email='finlaysonsteve@gmail.com',
-    url='https://github.com/cmsflex/cmsfelx',
+    url='https://github.com/cmsflex/cmsflex',
     packages=find_packages(exclude=['project', 'project.*']),
     install_requires=INSTALL_REQUIRES,
     license='LICENSE.txt',
