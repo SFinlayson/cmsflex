@@ -1,3 +1,8 @@
+from django.db import models
+from cms.models import CMSPlugin
+from djangocms_attributes_field.fields import AttributesField
+
+
 class Flexbox(CMSPlugin):
     """
     Flexbox with Flexitems
