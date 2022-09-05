@@ -37,6 +37,6 @@ class FlexItemPlugin(CMSPluginBase):
     model = FlexItem
     module = "Flexbox"
     name = "FlexItem"
-    render_template = "cms/plugins/flexitem.html"
+    render_template = "cms/plugins/flexboxitem.html"
     parent_classes = ["FlexboxPlugin"]
     allow_children = True
