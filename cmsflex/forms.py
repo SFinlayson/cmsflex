@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import FlexItem
+from cmsflex.models import FlexItem
 
 
 class FlexForm(forms.ModelForm):

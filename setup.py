@@ -42,6 +42,7 @@ setup(
     url='https://github.com/cmsflex/cmsfelx',
     packages=[
         'cmsflex',
+        'cmsflex.migrations'
     ],
     install_requires=INSTALL_REQUIRES,
     license='LICENSE.txt',

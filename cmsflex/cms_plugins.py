@@ -1,8 +1,8 @@
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
 from cms.models.pluginmodel import CMSPlugin
-from .models import Flexbox, FlexItem
-from .forms import FlexForm
+from cmsflex.models import Flexbox, FlexItem
+from cmsflex.forms import FlexForm
 
 
 @plugin_pool.register_plugin
