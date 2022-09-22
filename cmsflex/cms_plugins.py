@@ -25,7 +25,7 @@ class FlexboxPlugin(CMSPluginBase):
                 placeholder=obj.placeholder,
                 language=obj.language,
                 position=CMSPlugin.objects.filter(parent=obj).count(),
-                class_name=f"{obj.class_name}_item",
+                label=f"{obj.label}_item",
                 plugin_type=FlexItemPlugin.__name__
             )
             col.save()
