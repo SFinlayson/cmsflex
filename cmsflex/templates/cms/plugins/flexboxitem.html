@@ -1,5 +1,5 @@
 {% load cms_tags %}
-<div class="{{instance.class_name}}" style="{% if instance.flex %}flex:{{instance.flex}};{% endif %}" {% if instance.attributes %}{{instance.attributes_str}}{% endif %}>
+<div class="flexitem{{instance.label}}" style="{% if instance.flex %}flex:{{instance.flex}};{% endif %}" {% if instance.attributes %}{{instance.attributes_str}}{% endif %}>
 {% for plugin in instance.child_plugin_instances %}{% render_plugin plugin %}{% endfor %}
 </div>
 
