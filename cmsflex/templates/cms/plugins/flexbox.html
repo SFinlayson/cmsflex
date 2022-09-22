@@ -1,11 +1,12 @@
 {% load cms_tags %}
 <style>
 .flexbox{{instance.pk}} {
+    display:flex;
     {% if instance.background_colour %}background: {{instance.background_colour}};{% endif %}{% if instance.colour %}color: {{instance.colour}};{% endif %}{% if instance.direction %}flex-direction: {{instance.direction}};{% endif %}{% if instance.wrap %}flex-wrap: {{instance.wrap}};{% endif %}{% if instance.justify_content %}justify-content: {{instance.justify_content}};{% endif %}{% if instance.align_items %}align-items: {{instance.align_items}}; {% endif %}{% if instance.align_content %}align-content: {{instance.align_content}};{% endif %}{% if instance.gap %}gap: {{instance.gap}};{% endif %}
 }
 </style>
 
-<div style="display:flex;" class="flexbox{{ instance.pk }}" {% if instance.attributes %}{{instance.attributes_str}}{% endif %}>
+<div class="flexbox{{ instance.pk }}" {% if instance.attributes %}{{instance.attributes_str}}{% endif %}>
 {% for plugin in instance.child_plugin_instances %}{% render_plugin plugin %}{% endfor %}
 </div>
 
