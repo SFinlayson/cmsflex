@@ -9,6 +9,7 @@ class Flexbox(CMSPlugin):
     """
 
     label = models.CharField(max_length=80)
+    responsive = models.BooleanField(default=True)
     background_colour = models.CharField(max_length=30, blank=True, null=True)
     colour = models.CharField(max_length=30, blank=True, null=True)
     direction = models.CharField(max_length=80, blank=True, null=True)
